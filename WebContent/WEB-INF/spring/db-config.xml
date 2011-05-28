@@ -18,12 +18,11 @@
      <!-- Hibernate SessionFactory -->
     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
         <property name="dataSource"><ref local="dataSource"/></property>
-         <property name="packagesToScan" value="br.com.braziljs.loiane.model" />
+         <property name="packagesToScan" value="com.loiane.model" />
         <property name="hibernateProperties">
         <props>
             <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
             <prop key="hibernate.show_sql">false</prop>
-			<prop key="hibernate.hbm2ddl.auto">update</prop>
         </props>
         </property>
     </bean>

@@ -9,6 +9,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
+
+import com.loiane.util.JsonDateSerializer;
 
 /**
  * Company POJO
@@ -19,7 +22,7 @@ import org.codehaus.jackson.annotate.JsonAutoDetect;
  */
 @JsonAutoDetect
 @Entity
-@Table(name="COMPANY")
+@Table(name="COMPANIES")
 public class Company {
 
 	@Id
@@ -27,7 +30,7 @@ public class Company {
 	@Column(name="COMPANY_ID")
 	private int id;
 	
-	@Column(name="COMPANY_NAME", nullable=false)
+	@Column(name="COMPANY_NAME", nullable=false, length=45)
 	private String company;
 	
 	@Column(name="COMPANY_PRICE", nullable=false)
@@ -72,6 +75,8 @@ public class Company {
 	public void setPctChange(double pctChange) {
 		this.pctChange = pctChange;
 	}
+	
+	@JsonSerialize(using=JsonDateSerializer.class)
 	public Date getLastChange() {
 		return lastChange;
 	}
