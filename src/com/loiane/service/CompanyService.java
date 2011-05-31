@@ -9,12 +9,10 @@ import com.loiane.dao.CompanyDAO;
 import com.loiane.model.Company;
 
 /**
- * Contact Service
+ * Company Service
  * 
- * Sample project presented at BrazilJS
- * Brazilian JavaScript Conference
- * Fortaleza - Ceará - 13-14 May 2011
- * http://braziljs.com.br/2011
+ * All the business login goes here.
+ * It is the mediator between the Controller and the DAO.
  * 
  * @author Loiane Groner
  * http://loianegroner.com (English)
@@ -25,6 +23,10 @@ public class CompanyService {
 
 	private CompanyDAO companyDAO;
 	
+	/**
+	 * Get the list from all companies
+	 * @return list of all companies
+	 */
 	public List<Company> getCompanies(){
 		return companyDAO.getCompanies();
 	}

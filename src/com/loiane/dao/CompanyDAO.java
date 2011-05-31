@@ -11,12 +11,8 @@ import org.springframework.stereotype.Repository;
 import com.loiane.model.Company;
 
 /**
- * Contact DAO class.
- * 
- * Sample project presented at BrazilJS
- * Brazilian JavaScript Conference
- * Fortaleza - Ceará - 13-14 May 2011
- * http://braziljs.com.br/2011
+ * Company DAO class.
+ * Access DataBase using Hibernate.
  * 
  * @author Loiane Groner
  * http://loianegroner.com (English)
@@ -34,7 +30,7 @@ public class CompanyDAO {
 	
 	/**
 	 * Get List of all companies from database
-	 * @return list of all contacts
+	 * @return list of all companies
 	 */
 	public List<Company> getCompanies() {
 		

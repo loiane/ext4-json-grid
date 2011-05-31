@@ -12,7 +12,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * Used to serialize Java.util.Date, which is not a common JSON
- * type, so we have to create a custom serializa method;.
+ * type, so we have to create a custom serializer method.
+ * Used by Jackson JSON Processor.
  * 
  * @author Loiane Groner
  * http://loianegroner.com (English)
