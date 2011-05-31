@@ -25,12 +25,12 @@ copy and paste all the jar files into WebContent/WEB-INF/lib folder
 ## Tutorial - Step by Step
 
 * English: coming soon
-* Português: em breve
+* Portugues: em breve
 
 ## Page Example:
 
 * English: http://loianegroner.com/extjs
-* Português: http://loiane.com/extjs
+* Portugues: http://loiane.com/extjs
 
 ## How to download this source code without using git:
 
@@ -39,6 +39,6 @@ em breve
 
 ## More Ext JS 4 examples with Java
 
-Author: Loiane Groner
-http://loianegroner.com (English)
-http://loiane.com (Portuguese)
+* Author: Loiane Groner
+* http://loianegroner.com (English)
+* http://loiane.com (Portuguese)
