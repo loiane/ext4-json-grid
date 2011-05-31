@@ -13,6 +13,7 @@ Please run the scrip inside sql/script.sql before running this project.
 ## Libs
 
 All libs/jars and their dependencies are included:
+
 * Ext JS 4
 * Spring MVC 3
 * Hibernate 3.5
@@ -34,8 +35,8 @@ copy and paste all the jar files into WebContent/WEB-INF/lib folder
 
 ## How to download this source code without using git:
 
-tutorial link - coming soon
-em breve
+* tutorial link - coming soon
+* em breve
 
 ## More Ext JS 4 examples with Java
 
